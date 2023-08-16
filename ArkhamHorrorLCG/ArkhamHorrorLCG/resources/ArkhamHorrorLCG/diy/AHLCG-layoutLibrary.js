@@ -1016,12 +1016,14 @@ function layoutText( bindings, parts, suffix, faceIndex ) {
 				if ( CardTypes[faceIndex] == 'Scenario' ) height = 18;
 				else if ( CardTypes[faceIndex] == 'Guide75' ) height = 40;
 				else if ( CardTypes[faceIndex] == 'GuideA4' ) height = 40;
+				else if ( CardTypes[faceIndex] == 'Guide21x28' ) height = 40;
 				
 				field = new textArea( '', height, 30 );
 				bindings.add( key + BindingSuffixes[faceIndex], field, [ faceIndex ] );
 
 				if ( CardTypes[faceIndex] == 'Guide75' ) tipCount = 3;
 				else if ( CardTypes[faceIndex] == 'GuideA4' )  tipCount = 3;
+				else if ( CardTypes[faceIndex] == 'Guide21x28' )  tipCount = 3;
 				else tipCount = 2;
 				break;
 			case 'Header':
